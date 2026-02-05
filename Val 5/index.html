@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #7b0f12;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    /* GRID LOVE */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      justify-items: center;
+      margin-bottom: 25px;
+    }
+
+    .heart {
+      width: 140px;
+      height: 130px;
+    }
+
+    .heart svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,0.45));
+    }
+
+    /* POV TEXT */
+    .pov {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .pov span {
+      color: #ffb3c1;
+    }
+
+    /* LETTER */
+    .letter {
+      font-size: 12px;
+      line-height: 1.7;
+      opacity: 0.85;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .heart {
+        width: 120px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- FOTO LOVE -->
+  <div class="photo-grid">
+
+    <!-- LOVE 1 -->
+    <div class="heart">
+      <svg viewBox="0 0 100 90">
+        <defs>
+          <clipPath id="heart1">
+            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
+          </clipPath>
+        </defs>
+        <image href="img/1.jpg" width="100%" height="100%" clip-path="url(#heart1)" />
+      </svg>
+    </div>
+
+    <!-- LOVE 2 -->
+    <div class="heart">
+      <svg viewBox="0 0 100 90">
+        <defs>
+          <clipPath id="heart2">
+            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
+          </clipPath>
+        </defs>
+        <image href="img/2.jpg" width="100%" height="100%" clip-path="url(#heart2)" />
+      </svg>
+    </div>
+
+    <!-- LOVE 3 -->
+    <div class="heart">
+      <svg viewBox="0 0 100 90">
+        <defs>
+          <clipPath id="heart3">
+            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
+          </clipPath>
+        </defs>
+        <image href="img/3.jpg" width="100%" height="100%" clip-path="url(#heart3)" />
+      </svg>
+    </div>
+
+    <!-- LOVE 4 -->
+    <div class="heart">
+      <svg viewBox="0 0 100 90">
+        <defs>
+          <clipPath id="heart4">
+            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
+          </clipPath>
+        </defs>
+        <image href="img/4.jpg" width="100%" height="100%" clip-path="url(#heart4)" />
+      </svg>
+    </div>
+
+    <!-- LOVE 5 -->
+    <div class="heart">
+      <svg viewBox="0 0 100 90">
+        <defs>
+          <clipPath id="heart5">
+            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
+          </clipPath>
+        </defs>
+        <image href="img/5.jpg" width="100%" height="100%" clip-path="url(#heart5)" />
+      </svg>
+    </div>
+
+    <!-- LOVE 6 -->
+    <div class="heart">
+      <svg viewBox="0 0 100 90">
+        <defs>
+          <clipPath id="heart6">
+            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
+          </clipPath>
+        </defs>
+        <image href="img/6.jpg" width="100%" height="100%" clip-path="url(#heart6)" />
+      </svg>
+    </div>
+
+  </div>
+  <!-- LETTER -->
+  <div class="letter">
+    Hello, my love. Every moment with you feels like a beautiful dream, and I
+    can't imagine my life without your smile lighting up my world. Your presence
+    brings so much joy and warmth into my life, making every day brighter and
+    more meaningful. I am truly grateful for the love and happiness you bring
+    into my life.
+    <br><br>
+    Happy Valentine's Day! Thank you for being my partner, my confidant, and my
+    source of endless love.
+  </div>
+
+</div>
+
+<script>
+  // siap kalau mau animasi atau interaksi
+</script>
+
+</body>
+</html>
