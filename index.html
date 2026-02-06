@@ -25,6 +25,7 @@
       width: 90%;
       max-width: 900px;
       text-align: center;
+      position: relative;
     }
 
     /* GRID LOVE */
@@ -47,17 +48,6 @@
       filter: drop-shadow(0 8px 18px rgba(0,0,0,0.45));
     }
 
-    /* POV TEXT */
-    .pov {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .pov span {
-      color: #ffb3c1;
-    }
-
     /* LETTER */
     .letter {
       font-size: 12px;
@@ -65,6 +55,21 @@
       opacity: 0.85;
       max-width: 750px;
       margin: auto;
+    }
+
+    /* ARROW */
+    .arrow {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 28px;
+      color: white;
+      text-decoration: none;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
     }
 
     /* RESPONSIVE */
@@ -88,96 +93,61 @@
   <!-- FOTO LOVE -->
   <div class="photo-grid">
 
-    <!-- LOVE 1 -->
     <div class="heart">
       <svg viewBox="0 0 100 90">
-        <defs>
-          <clipPath id="heart1">
-            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
-          </clipPath>
-        </defs>
-        <image href="img/1.jpg" width="100%" height="100%" clip-path="url(#heart1)" />
+        <defs><clipPath id="h1"><path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/></clipPath></defs>
+        <image href="img/7.jpg" width="100%" height="100%" clip-path="url(#h1)" />
       </svg>
     </div>
 
-    <!-- LOVE 2 -->
     <div class="heart">
       <svg viewBox="0 0 100 90">
-        <defs>
-          <clipPath id="heart2">
-            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
-          </clipPath>
-        </defs>
-        <image href="img/2.jpg" width="100%" height="100%" clip-path="url(#heart2)" />
+        <defs><clipPath id="h2"><path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/></clipPath></defs>
+        <image href="img/8.jpg" width="100%" height="100%" clip-path="url(#h2)" />
       </svg>
     </div>
 
-    <!-- LOVE 3 -->
     <div class="heart">
       <svg viewBox="0 0 100 90">
-        <defs>
-          <clipPath id="heart3">
-            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
-          </clipPath>
-        </defs>
-        <image href="img/3.jpg" width="100%" height="100%" clip-path="url(#heart3)" />
+        <defs><clipPath id="h3"><path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/></clipPath></defs>
+        <image href="img/3.jpg" width="100%" height="100%" clip-path="url(#h3)" />
       </svg>
     </div>
 
-    <!-- LOVE 4 -->
     <div class="heart">
       <svg viewBox="0 0 100 90">
-        <defs>
-          <clipPath id="heart4">
-            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
-          </clipPath>
-        </defs>
-        <image href="img/4.jpg" width="100%" height="100%" clip-path="url(#heart4)" />
+        <defs><clipPath id="h4"><path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/></clipPath></defs>
+        <image href="img/4.jpg" width="100%" height="100%" clip-path="url(#h4)" />
       </svg>
     </div>
 
-    <!-- LOVE 5 -->
     <div class="heart">
       <svg viewBox="0 0 100 90">
-        <defs>
-          <clipPath id="heart5">
-            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
-          </clipPath>
-        </defs>
-        <image href="img/5.jpg" width="100%" height="100%" clip-path="url(#heart5)" />
+        <defs><clipPath id="h5"><path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/></clipPath></defs>
+        <image href="img/5.jpg" width="100%" height="100%" clip-path="url(#h5)" />
       </svg>
     </div>
 
-    <!-- LOVE 6 -->
     <div class="heart">
       <svg viewBox="0 0 100 90">
-        <defs>
-          <clipPath id="heart6">
-            <path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/>
-          </clipPath>
-        </defs>
-        <image href="img/6.jpg" width="100%" height="100%" clip-path="url(#heart6)" />
+        <defs><clipPath id="h6"><path d="M50 85 C20 60,0 40,25 20 C40 5,50 25,50 25 C50 25,60 5,75 20 C100 40,80 60,50 85 Z"/></clipPath></defs>
+        <image href="img/6.jpg" width="100%" height="100%" clip-path="url(#h6)" />
       </svg>
     </div>
 
   </div>
+
   <!-- LETTER -->
   <div class="letter">
-    Hello, my love. Every moment with you feels like a beautiful dream, and I
-    can't imagine my life without your smile lighting up my world. Your presence
-    brings so much joy and warmth into my life, making every day brighter and
-    more meaningful. I am truly grateful for the love and happiness you bring
-    into my life.
+   Hello, my love. Every moment with you feels like a beautiful dream, and I can't imagine my life without your smile lighting up my world. Your presence brings so much joy and warmth into my life, making every day brighter and more meaningful. I am truly grateful for the love and happiness you bring into my life.
     <br><br>
-    Happy Valentine's Day! Thank you for being my partner, my confidant, and my
-    source of endless love.
+    Happy Valentine's Day! 💕
   </div>
 
-</div>
+  <!-- ARROW KE HALAMAN SELANJUTNYA -->
+  <a href="https://val-6.vercel.app/" class="arrow">→</a>
 
-<script>
-  // siap kalau mau animasi atau interaksi
-</script>
+</div>
 
 </body>
 </html>
